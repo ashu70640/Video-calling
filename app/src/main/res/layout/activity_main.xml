@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:context=".activities.MainActivity">
+
+    <ImageView
+        android:id="@+id/Background"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/newgradientbg" />
+
+    <ImageView
+        android:id="@+id/strLogo"
+        android:layout_width="157dp"
+        android:layout_height="63dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/strlog" />
+
+    <LinearLayout
+        android:id="@+id/CoinLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/icon_bg"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingTop="5dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="5dp"
+        app:layout_constraintBottom_toBottomOf="@+id/strLogo"
+        app:layout_constraintEnd_toStartOf="@+id/linearLayout3"
+        app:layout_constraintTop_toTopOf="@+id/strLogo"
+        app:layout_constraintVertical_bias="0.56">
+
+        <TextView
+            android:id="@+id/AvailCoins"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="You have:0"
+            android:textColor="@color/white" />
+
+        <ImageView
+            android:id="@+id/coinImg"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/ic_coin" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/icon_bg"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingTop="5dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="5dp"
+        app:layout_constraintBottom_toBottomOf="@+id/strLogo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/strLogo"
+        app:layout_constraintVertical_bias="0.56">
+
+        <ImageView
+            android:id="@+id/rewardBtn"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/ic_treasure_chest" />
+    </LinearLayout>
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottieAnimationView"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_marginTop="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/strLogo"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/holographicradar" />
+
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:id="@+id/profilePic"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:src="@drawable/demo_user"
+        app:civ_border_color="@color/white"
+        app:civ_border_width="2dp"
+        app:layout_constraintBottom_toBottomOf="@+id/lottieAnimationView"
+        app:layout_constraintEnd_toEndOf="@+id/lottieAnimationView"
+        app:layout_constraintStart_toStartOf="@+id/lottieAnimationView"
+        app:layout_constraintTop_toTopOf="@+id/lottieAnimationView" />
+
+    <TextView
+        android:id="@+id/valueCoin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/rowdies_light"
+        android:text="0"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/lottieAnimationView"
+        app:layout_constraintStart_toStartOf="@+id/lottieAnimationView"
+        app:layout_constraintTop_toBottomOf="@+id/lottieAnimationView" />
+
+    <TextView
+        android:id="@+id/info"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/amarante"
+        android:gravity="center"
+        android:text="Person looking for random people, click find and talk with them"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/lottieAnimationView"
+        app:layout_constraintStart_toStartOf="@+id/lottieAnimationView"
+        app:layout_constraintTop_toBottomOf="@+id/valueCoin" />
+
+    <LinearLayout
+        android:id="@+id/userCoinLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/icon_bg"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingTop="5dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="5dp"
+        app:layout_constraintEnd_toEndOf="@+id/info"
+        app:layout_constraintStart_toStartOf="@+id/info"
+        app:layout_constraintTop_toBottomOf="@+id/info">
+
+        <TextView
+            android:id="@+id/currentReqCoin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Coins:5"
+            android:textColor="@color/white" />
+
+        <ImageView
+            android:id="@+id/coin"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/ic_coin" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/findBtn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Find"
+        app:backgroundTint="@color/cardview_dark_background"
+        app:cornerRadius="15dp"
+        app:layout_constraintEnd_toEndOf="@+id/info"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="@+id/info"
+        app:layout_constraintTop_toBottomOf="@+id/userCoinLayout" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

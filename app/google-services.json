@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "364839752423",
+    "project_id": "strangervediocall",
+    "storage_bucket": "strangervediocall.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:364839752423:android:37a85dd0b5c080091e4842",
+        "android_client_info": {
+          "package_name": "com.example.vediocalling"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "364839752423-4pta8dqm881o5a2pi0onlip1fud8qsg6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.vediocalling",
+            "certificate_hash": "00a14b2d3671ec0d057840d38ac7b3077b127cf4"
+          }
+        },
+        {
+          "client_id": "364839752423-c25r7p041ovhh02nun01fja5bnjffd1q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDB87qSNvZ4wDy6stO8MWy5ik2uVHTl1mQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "364839752423-c25r7p041ovhh02nun01fja5bnjffd1q.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
